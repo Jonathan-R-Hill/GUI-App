@@ -29,7 +29,7 @@
 			btnPlaceHolder4 = new Button( );
 			btnPlaceHolder3 = new Button( );
 			btnPlaceHolder2 = new Button( );
-			btnPlaceholder1 = new Button( );
+			btnEmployeeManager = new Button( );
 			btnCalculator = new Button( );
 			btnCalendar = new Button( );
 			btnMainMenu = new Button( );
@@ -51,7 +51,7 @@
 			leftSidePanel.Controls.Add( btnPlaceHolder4 );
 			leftSidePanel.Controls.Add( btnPlaceHolder3 );
 			leftSidePanel.Controls.Add( btnPlaceHolder2 );
-			leftSidePanel.Controls.Add( btnPlaceholder1 );
+			leftSidePanel.Controls.Add( btnEmployeeManager );
 			leftSidePanel.Controls.Add( btnCalculator );
 			leftSidePanel.Controls.Add( btnCalendar );
 			leftSidePanel.Controls.Add( btnMainMenu );
@@ -118,19 +118,20 @@
 			btnPlaceHolder2.Text = "PlaceHolder";
 			btnPlaceHolder2.UseVisualStyleBackColor = true;
 			// 
-			// btnPlaceholder1
+			// btnEmployeeManager
 			// 
-			btnPlaceholder1.Dock = DockStyle.Top;
-			btnPlaceholder1.FlatAppearance.BorderSize = 0;
-			btnPlaceholder1.FlatStyle = FlatStyle.Flat;
-			btnPlaceholder1.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
-			btnPlaceholder1.ForeColor = Color.FromArgb(   0,   150,   250 );
-			btnPlaceholder1.Location = new Point( 0, 342 );
-			btnPlaceholder1.Name = "btnPlaceholder1";
-			btnPlaceholder1.Size = new Size( 209, 57 );
-			btnPlaceholder1.TabIndex = 4;
-			btnPlaceholder1.Text = "PlaceHolder";
-			btnPlaceholder1.UseVisualStyleBackColor = true;
+			btnEmployeeManager.Dock = DockStyle.Top;
+			btnEmployeeManager.FlatAppearance.BorderSize = 0;
+			btnEmployeeManager.FlatStyle = FlatStyle.Flat;
+			btnEmployeeManager.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
+			btnEmployeeManager.ForeColor = Color.FromArgb(   0,   150,   250 );
+			btnEmployeeManager.Location = new Point( 0, 342 );
+			btnEmployeeManager.Name = "btnEmployeeManager";
+			btnEmployeeManager.Size = new Size( 209, 57 );
+			btnEmployeeManager.TabIndex = 4;
+			btnEmployeeManager.Text = "Employee Manager";
+			btnEmployeeManager.UseVisualStyleBackColor = true;
+			btnEmployeeManager.Click +=  btnEmployeeManager_Click ;
 			// 
 			// btnCalculator
 			// 
@@ -276,7 +277,7 @@
         private PictureBox topLeftPictureBox;
         private Label lblTitle;
         private Button btnMainMenu;
-        private Button btnPlaceholder1;
+        private Button btnEmployeeManager;
         private Button btnCalculator;
         private Button btnCalendar;
         private Button btnPlaceHolder4;
