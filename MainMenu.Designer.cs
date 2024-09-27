@@ -238,7 +238,7 @@
 			btnMinimise.FlatStyle = FlatStyle.Flat;
 			btnMinimise.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
 			btnMinimise.ForeColor = Color.FromArgb(   65,   100,   100 );
-			btnMinimise.Location = new Point( 981, -1 );
+			btnMinimise.Location = new Point( 983, -5 );
 			btnMinimise.Name = "btnMinimise";
 			btnMinimise.Size = new Size( 29, 36 );
 			btnMinimise.TabIndex = 5;

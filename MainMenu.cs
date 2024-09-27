@@ -7,6 +7,11 @@ namespace Dashboard
 		private Color selectedColour = Color.FromArgb( 46, 51, 73 );
 		private Color defaultColor = Color.FromArgb( 24, 30, 54 );
 
+		// Movement vars
+		private bool dragging = false;
+		private Point dragFromPoint;
+		private Point dragToPoint;
+
 		public Panel ContentPanel { get { return contentPanel; } }
 
 		// Create Rounded edges of the application using windows dll
@@ -20,20 +25,22 @@ namespace Dashboard
 		{
 			InitializeComponent( );
 			this.DoubleBuffered = true;
-
 			Region = System.Drawing.Region.FromHrgn( CreateRoundRectRgn( 0, 0, Width, Height, 25, 25 ) );
+
 			// Set the selected area on start up as main menu
-			leftSidePanel.Height = btnMainMenu.Height;
-			leftSidePanel.Top = btnMainMenu.Top;
-			leftSidePanel.Left = btnMainMenu.Left;
 			btnMainMenu.BackColor = selectedColour;
+
+			// Mouse event handlers for moving window via the top left image
+			topLeftPictureBox.MouseDown += new MouseEventHandler( topLeftPictureBox_MouseDown );
+			topLeftPictureBox.MouseMove += new MouseEventHandler( topLeftPictureBox_MouseMove );
+			topLeftPictureBox.MouseUp += new MouseEventHandler( topLeftPictureBox_MouseUp );
 		}
 
 		private void MainMenu_Load ( object sender, EventArgs e )
 		{
 		}
-		
-		// ----- GUI Methods ----- //
+
+		// ---------- GUI Methods ---------- //
 		private void setClickedColour ( Button buttonName )
 		{
 			contentPanel.Controls.Clear( );
@@ -63,18 +70,16 @@ namespace Dashboard
 			form.Show( );
 		}
 
-		// ----- Button On Click Events ----- //
+
+		// ---------- Button On Click Events ---------- //
 		private void btnMainMenu_Click ( object sender, EventArgs e )
 		{ 
 			setClickedColour( (Button) sender );
-
 		}
 
 		private void btnCalender_Click ( object sender, EventArgs e )
 		{
 			setClickedColour( (Button) sender );
-
-
 		}
 
 		private void btnCalculator_Click ( object sender, EventArgs e )
@@ -82,6 +87,14 @@ namespace Dashboard
 			setClickedColour( (Button) sender );
 		}
 
+		private void btnEmployeeManager_Click ( object sender, EventArgs e )
+		{
+			setClickedColour( (Button) sender );
+			var employeeForm = new EmployeeManager(this );
+			openFormInPanel(employeeForm, contentPanel );
+		}
+
+		// ---------- Top Bar Utility ---------- //
 		private void btnClose_Click ( object sender, EventArgs e )
 		{
 			Application.Exit( );
@@ -92,11 +105,27 @@ namespace Dashboard
 			this.WindowState = FormWindowState.Minimized;
 		}
 
-		private void btnEmployeeManager_Click ( object sender, EventArgs e )
+		private void topLeftPictureBox_MouseDown ( object sender, MouseEventArgs e )
 		{
-			setClickedColour( (Button) sender );
-			var employeeForm = new EmployeeManager(this );
-			openFormInPanel(employeeForm, contentPanel );
+			if ( e.Button == MouseButtons.Left ) {
+				dragging = true;
+				dragFromPoint = Cursor.Position;
+				dragToPoint = this.Location;
+			}
 		}
+
+		private void topLeftPictureBox_MouseMove ( object sender, MouseEventArgs e )
+		{
+			if ( dragging ) {
+				Point diff = Point.Subtract( Cursor.Position, new Size( dragFromPoint ) );
+				this.Location = Point.Add( dragToPoint, new Size( diff ) );
+			}
+		}
+
+		private void topLeftPictureBox_MouseUp ( object sender, MouseEventArgs e )
+		{
+			dragging = false;
+		}
+
 	}
 }

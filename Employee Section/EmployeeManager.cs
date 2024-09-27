@@ -20,5 +20,11 @@ namespace Dashboard
 			MainMenu.openFormInPanel( createEmployee, _mainMenu.ContentPanel );
 
 		}
+
+		private void btnViewExisting_Click ( object sender, EventArgs e )
+		{
+			var viewExistingEmployees = new EmpleoyeeViewer( );
+			MainMenu.openFormInPanel( viewExistingEmployees, _mainMenu.ContentPanel );
+		}
 	}
 }

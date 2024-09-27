@@ -19,12 +19,11 @@ namespace Dashboard
 		public void createEmployee ( Employee employee )
 		{
 			string data = $"{employee.Name}\t{employee.Age}\t{employee.Id}" +
-			$"\t{employee.ContractHours}\t{employee.PayPerHour}\t{employee.hoursWorked}\t";
+			$"\t{employee.ContractHours}\t{employee.PayPerHour}\t{employee.hoursWorked}";
 
 			using ( StreamWriter file = new StreamWriter( fullPath, true ) ) {
 				file.WriteLine( data );
 			}
-
 		}
 
 		public void getExistingEmployees ( )

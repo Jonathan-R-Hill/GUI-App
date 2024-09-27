@@ -4,6 +4,9 @@
     <Compile Update="Employee Section\CreateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Employee Section\EmpleoyeeViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Employee Section\EmployeeManager.cs">
       <SubType>Form</SubType>
     </Compile>

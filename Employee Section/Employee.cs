@@ -4,14 +4,14 @@ namespace Dashboard.Employee_Section
 	public class Employee
 	{
 		private string name { get; set; }
-		private int age {  get; set; }
+		private int age { get; set; }
 		private string id { get; set; }
 		private float contractHours { get; set; }
 		private float payPerHour { get; set; }
 		public float hoursWorked { get; set; }
 
-		public Employee(string name, int age, string id, float contractHours,
-		float payPerHour, float hoursWorked=0)
+		public Employee ( string name, int age, string id, float contractHours,
+		float payPerHour, float hoursWorked = 0 )
 		{
 			this.name = name;
 			this.age = age;
@@ -23,8 +23,8 @@ namespace Dashboard.Employee_Section
 		// ----- Validation Methods -----//
 		public static bool validateName ( string name )
 		{
-			if ( name == null || name.Length >50 || name.Length < 1 || name.Trim().Length == 0 ) { return false;  }
-			return !name.Any(char.IsDigit);
+			if ( name == null || name.Length > 50 || name.Length < 1 || name.Trim( ).Length == 0 ) { return false; }
+			return !name.Any( char.IsDigit );
 		}
 
 		public static bool validateAge ( string age )
@@ -35,18 +35,15 @@ namespace Dashboard.Employee_Section
 				return true;
 			}
 			catch ( Exception e ) {
-			return false;
+				return false;
 			}
 		}
 
 		public static bool validateId ( string id )
 		{
-			if ( id.Length == 3 ) 
-			{
-				if ( char.IsLetter( id[0] ) ) 
-				{
-					for ( int i = 1 ; i < id.Length ; i++ ) 
-					{
+			if ( id.Length == 3 ) {
+				if ( char.IsLetter( id[0] ) ) {
+					for ( int i = 1 ; i < id.Length ; i++ ) {
 						if ( !char.IsDigit( id[i] ) ) { return false; }
 					}
 					return true;
@@ -60,7 +57,7 @@ namespace Dashboard.Employee_Section
 		{
 			try {
 				float check = float.Parse( hours );
-				if (check < 8 || check > 50) { return false; }
+				if ( check < 8 || check > 50 ) { return false; }
 				return true;
 			}
 			catch ( Exception e ) {
@@ -71,8 +68,8 @@ namespace Dashboard.Employee_Section
 		public static bool validateWage ( string wage )
 		{
 			try {
-				float check = float.Parse ( wage );
-				if (check < 10 || check > 100) { return false; }
+				float check = float.Parse( wage );
+				if ( check < 10 || check > 100 ) { return false; }
 				return true;
 			}
 			catch ( Exception e ) { return false; }
@@ -106,5 +103,10 @@ namespace Dashboard.Employee_Section
 			get { return payPerHour; }
 		}
 
+		public float HoursWorked
+		{
+			get { return hoursWorked; }
+
+		}
 	}
 }

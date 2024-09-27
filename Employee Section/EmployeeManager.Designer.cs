@@ -59,6 +59,7 @@
 			btnViewExisting.TabIndex = 5;
 			btnViewExisting.Text = "View Existing Employee's";
 			btnViewExisting.UseVisualStyleBackColor = false;
+			btnViewExisting.Click +=  btnViewExisting_Click ;
 			// 
 			// EmployeeManager
 			// 
