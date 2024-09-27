@@ -78,8 +78,33 @@ namespace Dashboard.Employee_Section
 			catch ( Exception e ) { return false; }
 		}
 
-		// ----- Custom Setters ----- //
+		// ----- Custom Setters & Getters ----- //
 		public void setHoursWorked ( float hours ) { hoursWorked += hours; }
+
+		public string Name
+		{
+			get { return name; }
+		}
+
+		public int Age
+		{
+			get { return age; }
+		}
+
+		public string Id
+		{
+			get { return id; }
+		}
+
+		public float ContractHours
+		{
+			get { return contractHours; }
+		}
+
+		public float PayPerHour
+		{
+			get { return payPerHour; }
+		}
 
 	}
 }

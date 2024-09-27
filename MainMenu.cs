@@ -2,13 +2,14 @@ using System.Runtime.InteropServices;
 
 namespace Dashboard
 {
-
 	public partial class MainMenu : Form
 	{
 		private Color selectedColour = Color.FromArgb( 46, 51, 73 );
 		private Color defaultColor = Color.FromArgb( 24, 30, 54 );
 
-		// Create Rounded edges of the application
+		public Panel ContentPanel { get { return contentPanel; } }
+
+		// Create Rounded edges of the application using windows dll
 		[DllImport( "Gdi32.dll", EntryPoint = "CreateRoundRectRgn" )]
 
 		private static extern IntPtr CreateRoundRectRgn (
@@ -18,6 +19,8 @@ namespace Dashboard
 		public MainMenu ( )
 		{
 			InitializeComponent( );
+			this.DoubleBuffered = true;
+
 			Region = System.Drawing.Region.FromHrgn( CreateRoundRectRgn( 0, 0, Width, Height, 25, 25 ) );
 			// Set the selected area on start up as main menu
 			leftSidePanel.Height = btnMainMenu.Height;
@@ -28,15 +31,8 @@ namespace Dashboard
 
 		private void MainMenu_Load ( object sender, EventArgs e )
 		{
-
 		}
 		
-		public Panel ContentPanel
-		{
-			get { return contentPanel; }
-		}
-
-
 		// ----- GUI Methods ----- //
 		private void setClickedColour ( Button buttonName )
 		{
@@ -48,13 +44,8 @@ namespace Dashboard
 				}
 			}
 
-			// set title
+			// set title & button highlight
 			lblTitle.Text = buttonName.Text;
-
-			// set button highlight
-			leftSidePanel.Height = buttonName.Height;
-			leftSidePanel.Top = buttonName.Top;
-			leftSidePanel.Left = buttonName.Left;
 			buttonName.BackColor = selectedColour;
 		}
 
@@ -74,7 +65,7 @@ namespace Dashboard
 
 		// ----- Button On Click Events ----- //
 		private void btnMainMenu_Click ( object sender, EventArgs e )
-		{
+		{ 
 			setClickedColour( (Button) sender );
 
 		}

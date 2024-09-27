@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\employee section\\createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:employee section\\createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\employee section\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:employee section\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\employee section\\createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:employee section\\createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\employee section\\createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:employee section\\createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,20 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs",
               "RelativeDocumentMoniker": "MainMenu.cs",
-              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs",
-              "RelativeToolTip": "MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs*",
+              "RelativeToolTip": "MainMenu.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwAcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T19:02:51.938Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateEmployee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\CreateEmployee.cs",
+              "RelativeDocumentMoniker": "Employee Section\\CreateEmployee.cs",
+              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\CreateEmployee.cs [Design]",
+              "RelativeToolTip": "Employee Section\\CreateEmployee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:44:12.88Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\CreateEmployee.cs",
+              "RelativeDocumentMoniker": "Employee Section\\CreateEmployee.cs",
+              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\CreateEmployee.cs",
+              "RelativeToolTip": "Employee Section\\CreateEmployee.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAASwE4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:35:28.928Z",
               "EditorCaption": ""
             },
             {
@@ -53,44 +74,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs",
-              "RelativeDocumentMoniker": "MainMenu.cs",
-              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs [Design]",
-              "RelativeToolTip": "MainMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T21:11:43.554Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\CreateEmployee.cs",
-              "RelativeDocumentMoniker": "Employee Section\\CreateEmployee.cs",
-              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\CreateEmployee.cs",
-              "RelativeToolTip": "Employee Section\\CreateEmployee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T20:26:20.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\Employee.cs",
-              "RelativeDocumentMoniker": "Employee Section\\Employee.cs",
-              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\Employee Section\\Employee.cs",
-              "RelativeToolTip": "Employee Section\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T20:09:07.964Z",
-              "EditorCaption": ""
             }
           ]
         }

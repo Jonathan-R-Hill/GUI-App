@@ -53,7 +53,7 @@
 			btnViewExisting.FlatStyle = FlatStyle.Flat;
 			btnViewExisting.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
 			btnViewExisting.ForeColor = Color.FromArgb(   0,   150,   250 );
-			btnViewExisting.Location = new Point( 508, 12 );
+			btnViewExisting.Location = new Point( 485, 12 );
 			btnViewExisting.Name = "btnViewExisting";
 			btnViewExisting.Size = new Size( 209, 57 );
 			btnViewExisting.TabIndex = 5;

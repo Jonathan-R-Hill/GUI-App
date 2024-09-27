@@ -27,6 +27,7 @@
 		/// </summary>
 		private void InitializeComponent ( )
 		{
+			components = new System.ComponentModel.Container( );
 			txtBoxName = new TextBox( );
 			lblName = new Label( );
 			lblAge = new Label( );
@@ -43,6 +44,8 @@
 			idError = new Label( );
 			wageError = new Label( );
 			hoursError = new Label( );
+			lblSuccess = new Label( );
+			timer1 = new System.Windows.Forms.Timer( components );
 			SuspendLayout( );
 			// 
 			// txtBoxName
@@ -211,12 +214,27 @@
 			hoursError.Size = new Size( 0, 21 );
 			hoursError.TabIndex = 17;
 			// 
+			// lblSuccess
+			// 
+			lblSuccess.AutoSize = true;
+			lblSuccess.Font = new Font( "Arial", 16F, FontStyle.Bold, GraphicsUnit.Point,  0 );
+			lblSuccess.ForeColor = SystemColors.Info;
+			lblSuccess.Location = new Point( 270, 382 );
+			lblSuccess.Name = "lblSuccess";
+			lblSuccess.Size = new Size( 0, 37 );
+			lblSuccess.TabIndex = 18;
+			// 
+			// timer1
+			// 
+			timer1.Tick +=  timer1_Tick ;
+			// 
 			// CreateEmployee
 			// 
 			AutoScaleDimensions = new SizeF( 10F, 21F );
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.FromArgb(   46,   51,   73 );
 			ClientSize = new Size( 814, 479 );
+			Controls.Add( lblSuccess );
 			Controls.Add( hoursError );
 			Controls.Add( wageError );
 			Controls.Add( idError );
@@ -258,5 +276,7 @@
 		private Label idError;
 		private Label wageError;
 		private Label hoursError;
+		private Label lblSuccess;
+		private System.Windows.Forms.Timer timer1;
 	}
 }
