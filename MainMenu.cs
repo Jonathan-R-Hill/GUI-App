@@ -1,3 +1,4 @@
+using Dashboard.Todo_Section;
 using System.Runtime.InteropServices;
 
 namespace Dashboard
@@ -89,6 +90,13 @@ namespace Dashboard
 			openFormInPanel( employeeForm, contentPanel );
 		}
 
+		private void btnTodo_Click ( object sender, EventArgs e )
+		{
+			setClickedColour( (Button) sender );
+			var todoForm = new TodoListForm( );
+			openFormInPanel( todoForm, contentPanel );
+		}
+
 		// ---------- Top Bar Utility ---------- //
 		private void btnClose_Click ( object sender, EventArgs e )
 		{
@@ -100,6 +108,7 @@ namespace Dashboard
 			this.WindowState = FormWindowState.Minimized;
 		}
 
+		// Window movement using top left image
 		private void topLeftPictureBox_MouseDown ( object sender, MouseEventArgs e )
 		{
 			if ( e.Button == MouseButtons.Left ) {
@@ -121,6 +130,7 @@ namespace Dashboard
 		{
 			dragging = false;
 		}
+
 
 	}
 }

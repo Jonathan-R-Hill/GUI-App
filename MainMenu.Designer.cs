@@ -31,7 +31,7 @@
 			btnPlaceHolder2 = new Button( );
 			btnEmployeeManager = new Button( );
 			btnCalculator = new Button( );
-			btnPlaceholder0 = new Button( );
+			btnTodo = new Button( );
 			btnMainMenu = new Button( );
 			panel2 = new Panel( );
 			topLeftPictureBox = new PictureBox( );
@@ -53,7 +53,7 @@
 			leftSidePanel.Controls.Add( btnPlaceHolder2 );
 			leftSidePanel.Controls.Add( btnEmployeeManager );
 			leftSidePanel.Controls.Add( btnCalculator );
-			leftSidePanel.Controls.Add( btnPlaceholder0 );
+			leftSidePanel.Controls.Add( btnTodo );
 			leftSidePanel.Controls.Add( btnMainMenu );
 			leftSidePanel.Controls.Add( panel2 );
 			leftSidePanel.Dock = DockStyle.Left;
@@ -148,19 +148,20 @@
 			btnCalculator.UseVisualStyleBackColor = true;
 			btnCalculator.Click +=  btnCalculator_Click ;
 			// 
-			// btnPlaceholder0
+			// btnTodo
 			// 
-			btnPlaceholder0.Dock = DockStyle.Top;
-			btnPlaceholder0.FlatAppearance.BorderSize = 0;
-			btnPlaceholder0.FlatStyle = FlatStyle.Flat;
-			btnPlaceholder0.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
-			btnPlaceholder0.ForeColor = Color.FromArgb(   0,   150,   250 );
-			btnPlaceholder0.Location = new Point( 0, 228 );
-			btnPlaceholder0.Name = "btnPlaceholder0";
-			btnPlaceholder0.Size = new Size( 209, 57 );
-			btnPlaceholder0.TabIndex = 2;
-			btnPlaceholder0.Text = "Place Holder";
-			btnPlaceholder0.UseVisualStyleBackColor = true;
+			btnTodo.Dock = DockStyle.Top;
+			btnTodo.FlatAppearance.BorderSize = 0;
+			btnTodo.FlatStyle = FlatStyle.Flat;
+			btnTodo.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
+			btnTodo.ForeColor = Color.FromArgb(   0,   150,   250 );
+			btnTodo.Location = new Point( 0, 228 );
+			btnTodo.Name = "btnTodo";
+			btnTodo.Size = new Size( 209, 57 );
+			btnTodo.TabIndex = 2;
+			btnTodo.Text = "Todo List";
+			btnTodo.UseVisualStyleBackColor = true;
+			btnTodo.Click +=  btnTodo_Click ;
 			// 
 			// btnMainMenu
 			// 
@@ -278,7 +279,7 @@
         private Button btnMainMenu;
         private Button btnEmployeeManager;
         private Button btnCalculator;
-        private Button btnPlaceholder0;
+        private Button btnTodo;
         private Button btnPlaceHolder4;
         private Button btnPlaceHolder3;
         private Button btnPlaceHolder2;

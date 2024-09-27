@@ -7,6 +7,8 @@ namespace Dashboard
 		private string fileName = "";
 		private string path = AppDomain.CurrentDomain.BaseDirectory;
 		private string fullPath;
+
+		// ---------- Employee Section ---------- //
 		private List<Employee> employeeData = new List<Employee>( );
 
 		public FileIO ( string fileName = "data.txt" )
@@ -53,6 +55,41 @@ namespace Dashboard
 		public List<Employee> GetEmployeeData ( )
 		{
 			return employeeData;
+		}
+
+
+		// ---------- Todo Section ---------- //
+		public void addToList ( string todo )
+		{
+			using ( StreamWriter file = new StreamWriter( fullPath, true ) ) {
+				file.WriteLine( todo );
+			}
+		}
+
+		public void updateList ( List<string> todo )
+		{
+			using ( StreamWriter file = new StreamWriter( fullPath ) ) {
+				foreach ( string item in todo ) {
+					file.WriteLine ( item );
+				}
+			}
+		}
+
+		public List<String> getExistingTodos ( )
+		{
+			List<String> todoList = new List<String>( );
+			if ( File.Exists( fullPath ) ) {
+				using ( StreamReader sr = File.OpenText( fullPath ) ) {
+					string s;
+					
+
+					while ( ( s = sr.ReadLine( ) ) != null ) {
+						todoList.Add( s );
+					}
+					return todoList;
+				}
+			}
+			return todoList;
 		}
 
 	}
