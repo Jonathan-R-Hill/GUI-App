@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|c:\\users\\jonny\\onedrive\\desktop\\projects\\c#\\dashboard\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E5A7AB47-A962-4A6C-A712-F6EB4099B0D3}|Dashboard.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,24 +24,15 @@
               "RelativeDocumentMoniker": "MainMenu.cs",
               "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs",
               "RelativeToolTip": "MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T19:02:51.938Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-09-27T11:58:33.621Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -62,18 +45,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs",
-              "RelativeDocumentMoniker": "MainMenu.cs",
-              "ToolTip": "C:\\Users\\jonny\\OneDrive\\Desktop\\Projects\\C#\\Dashboard\\MainMenu.cs [Design]",
-              "RelativeToolTip": "MainMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T11:54:08.326Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

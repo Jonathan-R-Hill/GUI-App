@@ -31,7 +31,7 @@
 			btnPlaceHolder2 = new Button( );
 			btnEmployeeManager = new Button( );
 			btnCalculator = new Button( );
-			btnCalendar = new Button( );
+			btnPlaceholder0 = new Button( );
 			btnMainMenu = new Button( );
 			panel2 = new Panel( );
 			topLeftPictureBox = new PictureBox( );
@@ -53,7 +53,7 @@
 			leftSidePanel.Controls.Add( btnPlaceHolder2 );
 			leftSidePanel.Controls.Add( btnEmployeeManager );
 			leftSidePanel.Controls.Add( btnCalculator );
-			leftSidePanel.Controls.Add( btnCalendar );
+			leftSidePanel.Controls.Add( btnPlaceholder0 );
 			leftSidePanel.Controls.Add( btnMainMenu );
 			leftSidePanel.Controls.Add( panel2 );
 			leftSidePanel.Dock = DockStyle.Left;
@@ -148,20 +148,19 @@
 			btnCalculator.UseVisualStyleBackColor = true;
 			btnCalculator.Click +=  btnCalculator_Click ;
 			// 
-			// btnCalendar
+			// btnPlaceholder0
 			// 
-			btnCalendar.Dock = DockStyle.Top;
-			btnCalendar.FlatAppearance.BorderSize = 0;
-			btnCalendar.FlatStyle = FlatStyle.Flat;
-			btnCalendar.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
-			btnCalendar.ForeColor = Color.FromArgb(   0,   150,   250 );
-			btnCalendar.Location = new Point( 0, 228 );
-			btnCalendar.Name = "btnCalendar";
-			btnCalendar.Size = new Size( 209, 57 );
-			btnCalendar.TabIndex = 2;
-			btnCalendar.Text = "Calendar";
-			btnCalendar.UseVisualStyleBackColor = true;
-			btnCalendar.Click +=  btnCalender_Click ;
+			btnPlaceholder0.Dock = DockStyle.Top;
+			btnPlaceholder0.FlatAppearance.BorderSize = 0;
+			btnPlaceholder0.FlatStyle = FlatStyle.Flat;
+			btnPlaceholder0.Font = new Font( "Choco cooky", 10F, FontStyle.Bold, GraphicsUnit.Point,  0 );
+			btnPlaceholder0.ForeColor = Color.FromArgb(   0,   150,   250 );
+			btnPlaceholder0.Location = new Point( 0, 228 );
+			btnPlaceholder0.Name = "btnPlaceholder0";
+			btnPlaceholder0.Size = new Size( 209, 57 );
+			btnPlaceholder0.TabIndex = 2;
+			btnPlaceholder0.Text = "Place Holder";
+			btnPlaceholder0.UseVisualStyleBackColor = true;
 			// 
 			// btnMainMenu
 			// 
@@ -279,7 +278,7 @@
         private Button btnMainMenu;
         private Button btnEmployeeManager;
         private Button btnCalculator;
-        private Button btnCalendar;
+        private Button btnPlaceholder0;
         private Button btnPlaceHolder4;
         private Button btnPlaceHolder3;
         private Button btnPlaceHolder2;

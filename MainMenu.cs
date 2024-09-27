@@ -4,8 +4,8 @@ namespace Dashboard
 {
 	public partial class MainMenu : Form
 	{
-		private Color selectedColour = Color.FromArgb( 46, 51, 73 );
-		private Color defaultColor = Color.FromArgb( 24, 30, 54 );
+		private readonly Color selectedColour = Color.FromArgb( 46, 51, 73 );
+		private readonly Color defaultColor = Color.FromArgb( 24, 30, 54 );
 
 		// Movement vars
 		private bool dragging = false;
@@ -73,11 +73,6 @@ namespace Dashboard
 
 		// ---------- Button On Click Events ---------- //
 		private void btnMainMenu_Click ( object sender, EventArgs e )
-		{ 
-			setClickedColour( (Button) sender );
-		}
-
-		private void btnCalender_Click ( object sender, EventArgs e )
 		{
 			setClickedColour( (Button) sender );
 		}
@@ -90,8 +85,8 @@ namespace Dashboard
 		private void btnEmployeeManager_Click ( object sender, EventArgs e )
 		{
 			setClickedColour( (Button) sender );
-			var employeeForm = new EmployeeManager(this );
-			openFormInPanel(employeeForm, contentPanel );
+			var employeeForm = new EmployeeManager( this );
+			openFormInPanel( employeeForm, contentPanel );
 		}
 
 		// ---------- Top Bar Utility ---------- //

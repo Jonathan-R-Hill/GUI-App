@@ -11,5 +11,4 @@
 
 
 ## Todo
-	- Calendar
 	- Calculator
